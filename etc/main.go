@@ -1,42 +1,26 @@
 package main
 
-import (
-	"encoding/hex"
-	"fmt"
-	"math/rand"
-	"time"
-)
+import "os/exec"
+import "fmt"
+import "os"
 
 func main() {
-	myRand()
+	myExecute()
 }
 
-// 16進数ダンプ出力
-func hexDump() {
-	//256バイトのスライスを用意
-	data := make([]byte, 256)
+//外部プログラムを実行する
+func myExecute() {
+	//「go help」を実行するためのCmdを作成
+	cmd := exec.Command("go", "help")
 
-	//値を設定
-	for i := 0; i < len(data); i++ {
-		data[i] = byte(i)
+	//実行し、コマンドが出力した結果を取得
+	result, err := cmd.Output()
+
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
 	}
 
-	//ダンプ出力
-	fmt.Println(hex.Dump(data))
-
-}
-
-// 乱数生成
-func myRand() {
-	//乱数の初期値(現在時刻を乱数の元として使用)
-	rand.Seed(time.Now().UnixNano())
-
-	//int型の乱数
-	fmt.Println(rand.Int())
-
-	//float32型の乱数
-	fmt.Println(rand.Float32())
-
-	//float64型の乱数
-	fmt.Println(rand.Float64())
+	//実行結果を出力
+	fmt.Printf("%s\n", result)
 }

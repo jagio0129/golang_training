@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"log"
 	"net/http"
 	"text/template"
 )
@@ -59,5 +60,8 @@ func main() {
 	http.HandleFunc("/save/", saveHandler)
 
 	//httpサーバを開始
-	http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		log.Fatal("ListenAndServe: ", err)
+	}
 }

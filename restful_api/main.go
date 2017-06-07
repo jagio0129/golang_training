@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"html"
 	"log"
 	"net/http"
 
@@ -10,12 +9,22 @@ import (
 )
 
 func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+	fmt.Fprintf(w, "Welcome!")
+}
+
+func TodoIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+	fmt.Fprintf(w, "Todo Index!")
+}
+
+func TodoShow(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+	fmt.Fprintf(w, "Todo Show: %s", ps.ByName("todoId"))
 }
 
 func main() {
 	router := httprouter.New()
-	router.GET("/:path", Index)
+	router.GET("/", Index)
+	router.GET("/todos", TodoIndex)
+	router.GET("/todos/:todoId", TodoShow)
 
 	log.Fatal(http.ListenAndServe(":8080", router))
 }

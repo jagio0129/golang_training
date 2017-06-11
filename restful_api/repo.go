@@ -12,7 +12,7 @@ func init() {
 	RepoCreateTodo(Todo{Name: "Host meetup"})
 }
 
-func RepoFind(id int) Todo {
+func RepoFindTodo(id int) Todo {
 	for _, t := range todos {
 		if t.ID == id {
 			return t

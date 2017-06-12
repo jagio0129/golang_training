@@ -1,0 +1,10 @@
+{
+  "datetime": "2017-04-04T20:41:37.154+09:00",
+  "term": 86400,
+  "value": {
+    "thermal": 21.1,
+    "humidity": 68.1,
+    "illuminance": 1.1,
+    "CO2": 15.1
+  }
+}

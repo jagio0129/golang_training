@@ -1,0 +1,7 @@
+- [Go言語でJSONに泣かないためのコーディングパターン](http://qiita.com/minagoro0522/items/dc524e38073ed8e3831b)
+- [JSON-to-Go(jsonからgolangの構造体コードを生成してくれる)]https://mholt.github.io/json-to-go/
+- [Go言語でJSONファイルを読み込む](http://tomohitoy.hatenablog.com/entry/2015/02/02/180645)
+- [golang.org/x/net/websocketの使い方とkuiperbelt](http://qiita.com/mackee_w/items/b6036d132888caaf5f98)
+- [WebSocketのキホン](https://www.slideshare.net/You_Kinjoh/websocket-10621887)
+- [golangのWebsocketクライアント](http://blog.liris.org/2011/01/golangwebsocket.html)
+- [WebSocketをGoで触ってみた](http://qiita.com/m0a/items/f6405bc29073a7609050)

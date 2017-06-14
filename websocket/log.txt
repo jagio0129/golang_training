@@ -1,7 +1,0 @@
-- http://qiita.com/minagoro0522/items/dc524e38073ed8e3831b
-- https://mholt.github.io/json-to-go/
-- http://tomohitoy.hatenablog.com/entry/2015/02/02/180645
-- http://qiita.com/mackee_w/items/b6036d132888caaf5f98
-- https://www.slideshare.net/You_Kinjoh/websocket-10621887
-- http://blog.liris.org/2011/01/golangwebsocket.html
-- http://qiita.com/m0a/items/f6405bc29073a7609050

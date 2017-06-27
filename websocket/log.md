@@ -5,3 +5,5 @@
 - [WebSocketのキホン](https://www.slideshare.net/You_Kinjoh/websocket-10621887)
 - [golangのWebsocketクライアント](http://blog.liris.org/2011/01/golangwebsocket.html)
 - [WebSocketをGoで触ってみた](http://qiita.com/m0a/items/f6405bc29073a7609050)
+- [Go言語 - WebSocketのクライアントでJSONメッセージをやり取りしてみる](http://blog.y-yuki.net/entry/2017/04/24/163000)
+- [Gollira websocket](http://www.gorillatoolkit.org/pkg/websocket)
